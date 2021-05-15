@@ -14,14 +14,14 @@ load Z
 % Suppose that phase synchronization features of a patients's EEG is
 % extracted. In this example we earlier extracted 75 features from each
 % time-window. Next, optimal features were selected by a statistical test.
-% Obtained matrix called X along with their corresponding label
-% (seizure, non-seizure) or Y.
+% Obtained matrix is X, and corresponding labels are stored in Y
+% (seizure, non-seizure).
 % Z is all phase synchronization features in non-evaluative segment
 % Note that non-evaluative segment contains 3 or 4 ictal and inter-ictal samples. 
 
-sop = 10; 
-sph = 30;
 % Choose any SOP and SPH length in minutes
+sop = 10; % seizure occurrence period 
+sph = 30; % seizure prediction horizon
 
 N=16;  %length of time-window (second)
 M=3.2;   %length of overlap (second)
